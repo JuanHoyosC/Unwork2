@@ -1,0 +1,38 @@
+.contenedor1, .contenedor2{
+    width:70vh;
+    height:400px;
+    padding:30px;
+  }
+  
+  ul{
+    margin:500px 0px;
+  }
+  
+  
+  ul{
+    margin:0px;
+    padding:0px;
+  }
+  li{
+    text-align:center;
+    font-size:12px;
+    color:white;
+    display:inline-flex;
+    background: #539CEF;
+    border-radius:5px;
+    padding:2px 5px;
+  }
+  
+  .imagen1{
+    border-radius:50%;
+  }
+  .imagen{
+    display:grid;
+    grid-template-columns:1fr 4fr;
+  }
+  
+  img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+  }

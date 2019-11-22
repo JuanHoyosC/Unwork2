@@ -1,0 +1,96 @@
+<section>
+    <div class="section--negocio">
+
+        <div class="section--negocio--contenido">
+            <h1>UNWORKS para negocios</h1>
+            <div class="section--negocio--imagenes">
+                <div class="imagenes">
+                    <p>Lanza tus proyectos</p>
+                    <img src="https://images.vexels.com/media/users/3/145819/isolated/preview/486c34cf5b3b4badd52bc427dbeb44a1-dibujos-animados-de-cohetes-by-vexels.png"
+                        alt="">
+                </div>
+                <div class="imagenes">
+                    <p>Consigue a los mejores freelancer</p>
+                    <img src="http://www.elclubdelaprogramacion.com/wp-content/uploads/2016/08/el-equipo.png" alt="">
+                </div>
+                <div class="imagenes">
+                    <p>Sin necesidad de oficcionas</p>
+                    <img src="https://applink.io/assets/img/roles/developer.png" alt="">
+                </div>
+                <div class="imagenes">
+                    <p>Crea tus proyectos donde quieras</p>
+                    <img src="https://infosama.es/wp-content/uploads/2018/02/desarrollo-web.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="section--negocio--comenzar">
+            <div class="comenzar--contenido">
+                <h1 class="comenzar--titulo">Crea un proyecto</h1>
+                <p class="comenzar--texto">Pon en marcha tus ideas en poco tiempo con los mejores freelancer del
+                    planeta y al mejor costo. </p>
+                <button class="comenzar" [routerLink]="['/login']" *ngIf ="login3">Comenzar</button>
+                <button class="comenzar" [routerLink]="['/generarProyecto']" *ngIf = "loginN">Comenzar</button>
+            </div>
+        </div>
+    </div>
+    <div class="section--freelancer">
+
+        <div class="section--freelancer--contenido">
+            <h1>UNWORKS para freelancer</h1>
+            <div class="section--freelancer--imagenes">
+                <div class="imagenes">
+                    <p>Sencillo de ingresar</p>
+                    <img src="https://www.questionpro.com/qp_userimages/sub-3/3175908/ilustracion-optimizacion-web_Mesa-de-trabajo-1.png"
+                        alt="">
+                </div>
+                <div class="imagenes">
+                    <p>Trabaja en grupo desde casa</p>
+                    <img src="http://www.elclubdelaprogramacion.com/wp-content/uploads/2016/08/el-equipo.png" alt="">
+                </div>
+                <div class="imagenes">
+                    <p>En tu propia oficcina</p>
+                    <img src="https://applink.io/assets/img/roles/developer.png" alt="">
+                </div>
+                <div class="imagenes">
+                    <p>Portable</p>
+                    <img src="https://infosama.es/wp-content/uploads/2018/02/desarrollo-web.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="section--freelancer--categoria">
+            <h1>Categorias</h1>
+            <div class="section--categoria--imagenes">
+                <div class="categoria--imagenes">
+                    <p>Programación</p>
+                    <img src="https://www.lomasnuevo.net/wp-contentupl/2018/04/lenguajes.png" alt="">
+                </div>
+
+                <div class="categoria--imagenes">
+                    <p>Estadistica</p>
+                    <img src="http://datinformatica.com/wp-content/uploads/2014/11/soft1.png" alt="">
+                </div>
+
+                <div class="categoria--imagenes">
+                    <p>Matematicas</p>
+                    <img src="https://www.viatalentumacademy.com/wp-content/uploads/2018/08/matematica.png" alt="">
+                </div>
+
+                <div class="categoria--imagenes">
+                    <p>Arquitectura</p>
+                    <img src="https://www.2acad.es/wp-content/uploads/tendencias-construccion-arquitectura.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="section--freelancer--comenzar">
+            <div class="comenzar--contenido--freelancer">
+                <h1 class="comenzar--titulo">Conviértete en freelancer.</h1>
+                <p class="comenzar--texto">Construye tu carrera con reputación comprobada
+                    desde tu casa. Accede a miles de clientes cada
+                    mes y genera ingresos estables en la mayor
+                    comunidad freelance de América Latina. </p>
+                <button class="comenzar" [routerLink]="['/login']" *ngIf ="login2">Comenzar</button>
+                <button class="comenzar" [routerLink]="['/generarFreelancer']" *ngIf ="loginF">Comenzar</button>
+            </div>
+        </div>
+    </div>
+</section>

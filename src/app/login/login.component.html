@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="alert alert-danger text-center" role="alert" *ngIf="alert">
+        No debe dejar campos vacios
+    </div>
+
+    <form #Form="ngForm">
+        <h1>Ingresar</h1>
+
+        <div class="inputs">
+            <input type="email" name="correo" placeholder="Correo electronico" class="i" #nombre="ngModel"
+                [(ngModel)]="cor">
+            <input type="password" name="contraseña" placeholder="Contraseña" class="i" #nombre="ngModel"
+                [(ngModel)]="con">
+            <div style="color:rgba(211, 81, 81, 0.863);; font-size: 14px;" *ngIf="mostrar">
+                <p>{{contra}}</p>
+            </div>
+            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                <input type="checkbox" class="custom-control-input" id="customControlInline"
+                    (click)="mostrarContra(Form)">
+                <label class="custom-control-label" for="customControlInline">Mostrar contraseña</label>
+            </div>
+            <input type="button" value="Ingresar" class="i button" (click)="ingresar(Form)">
+            <label for="" class="nuevo">¿No tienes cuenta?</label><a [routerLink]="['/registrarse']">Registrarse</a>
+        </div>
+    </form>
+</body>
+
+</html>

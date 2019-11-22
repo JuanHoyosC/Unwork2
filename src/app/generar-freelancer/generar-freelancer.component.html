@@ -1,0 +1,47 @@
+<div class="alert alert-danger text-center" role="alert" *ngIf="alert">
+    No debe dejar campos vacios
+</div>
+<form #Form="ngForm" class="container my-5">
+    <div class="contenedor1 float-left">
+        <div class="form-group">
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Nombre del freelancer" name = "nom" [(ngModel)] ="nombre">
+        </div>
+        <div class="input-group">
+            <textarea class="form-control" aria-label="With textarea" placeholder="Describete" rows="11" name = "dec" [(ngModel)] = "descripcion"></textarea>
+        </div>
+    </div>
+
+    <div class="contenedor2 float-left">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Ubicación" name = "ubic" [(ngModel)] ="ubicacion">
+        </div>
+        <select class="form-control form-control-sm" name = "select" [(ngModel)]="opcionSeleccionado" (click)="capturar()">
+            <option >Programación</option>
+            <option>Diseño</option>
+            <option >Linux</option>
+            <option >Arquitectura</option>
+            <option >Programación web</option>          
+        </select>
+        <div class="my-4">
+            <ul *ngFor = "let op of listaOp" style = "display:inline-flex">
+                <li class = "li mx-2">{{op}}</li>
+            </ul>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Precio por hora" name = "precio" [(ngModel)] = "costo">
+        </div>
+        <div class="imagen my-4">
+            <img [src] = "urlImage | async" id = "imagen" >
+            <div class="custom-file my-3">
+                <input type="file" class="custom-file-input" accept=".png, .jpg"
+                    aria-describedby="inputGroupFileAddon03" (change) = "onUpload($event)">
+                <label class="custom-file-label" for="inputGroupFile03">Choose file</label>
+            </div>            
+        </div>
+        <div>
+            <input type="text" class = "my-2" name="bn" id="" [value] = "urlImage | async" [(ngModel)] = "im">
+        </div>      
+        <button type="button" class="btn btn-primary" (click) = "guardarDatos(Form)">Enviar</button>
+    </div>
+
+</form>

@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="contenedor--filtro float-left my-5">
+        <label class="titulo">Fecha</label>
+        <select class="form-control">
+            <option>Fecha de Creación</option>
+        </select>
+
+        <label class="titulo">Ubicación</label>
+        <select class="form-control">
+            <option>Ciudad</option>
+        </select>
+
+        <label class="titulo">Conocimientos</label>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Todas las categorias</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Programador web</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Diseño grafico</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Arquitectura</label>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Multimedia</label>
+        </div>
+
+        <label class="titulo">Precio por hora</label>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">MIN</span>
+            </div>
+            <input type="text" aria-label="First name" class="form-control">
+            <div class="input-group-prepend">
+                <span class="input-group-text">MAX</span>
+            </div>
+            <input type="text" aria-label="First name" class="form-control">
+        </div>
+    </div>
+    <div class="media float-left" style="width:60%" *ngFor = "let freelancer of freelancers; let indice = index;" >
+
+        <img src={{freelancer.foto}} class="mr-3" alt="...">
+        <div class="media-body">
+            <div class="categorias float-right" style="width:30%;">
+                <div class="categorias" style = "display:inline-flex" *ngFor = "let i of vector[indice]">
+                    <li >{{i}}</li>
+                </div>
+                <p>Valor por hora : <span style="color:green">${{freelancer.precio}}</span></p>
+            </div>
+            <h5 class="mt-0">{{freelancer.nombre}}</h5>
+            <p style="width:60%">
+                {{freelancer.descripcion}}
+            </p>
+            <div>
+                <input type="submit" class="btn btn-dark my-3" value="Contratar">
+            </div>
+        </div>
+    </div>
+</div>

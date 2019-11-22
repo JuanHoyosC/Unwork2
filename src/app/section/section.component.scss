@@ -1,0 +1,134 @@
+body{
+    font-family:'Segoe UI';
+    margin:0px;
+  }
+  
+  .section--negocio--contenido ,  .section--freelancer--contenido , .section--freelancer--categoria{
+    width:65%;
+    margin:auto;
+  }
+  
+  .section--negocio--contenido h1 , .section--freelancer--contenido h1{
+    text-align:center;
+    font-size:16px;
+    color:rgba(0,0,0,0.6);
+    margin-bottom:30px
+  }
+
+ 
+  .section--negocio--comenzar, .section--freelancer--comenzar{
+    width:100%;
+  }
+  
+  .section--negocio--imagenes, .section--freelancer--imagenes{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows:220px;
+    grid-gap:40px;
+  }
+  
+  .imagenes p{
+    text-align:center;
+    color:rgba(0,0,0,0.6);
+    margin:0px;
+  }
+  
+  
+  .imagenes img{
+    width:70%;
+    height:150px;
+    margin:0px 15%;
+    margin-top:20px;
+  }
+  
+  /*--------Categoria-------------*/
+
+  .section--freelancer--categoria h1{
+    font-size:16px;
+    color:rgba(0,0,0,0.6);
+    margin-bottom:30px;
+  }
+
+  .section--freelancer--contenido, .section--negocio--contenido{
+    margin-top:30px;
+  }
+  
+  .section--categoria--imagenes{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:250px;
+    grid-gap:50px;
+  }
+
+  .categoria--imagenes p{
+    text-align:center;
+    color:rgba(0,0,0,0.6);
+    margin:0px;
+  }
+  .categoria--imagenes{
+    box-shadow: 2px 5px 10px 0px rgba(0,0,0,0.4);
+  }
+  .categoria--imagenes img{
+    width:100%;
+    height:220px;
+  }
+  /*--------Contenido--negocios--*/
+  .comenzar--contenido{
+    float:left;
+    width:345px;
+    margin-top:50px;
+  }
+
+
+  .comenzar{
+    float:left;
+    font-family:'Segoe UI';
+    background:#1661B7;
+    border:none;
+    color:#FFFFFF;
+    border-radius:5px;
+    outline:none;
+    width:180px;
+    height:40px;
+    cursor:pointer;
+    margin-bottom:20px;
+  }
+  .section--negocio--comenzar, .section--freelancer--comenzar{
+    width: 100%;
+    height: 323px;
+    background-image: url('https://www.premierline.co.uk/content/dam/premierline/knowledge-centre/how-to-quickly-start-your-freelance-business_page-bnr-desktop.jpg');
+    padding:0px 16%;
+    box-sizing:border-box;
+    margin-top:30px;
+  }
+
+  
+  .comenzar--titulo{
+    font-size:16px;
+    color:rgb(255, 255, 255);
+  }
+
+  .comenzar--texto{
+    margin-bottom:20px;
+    color:rgb(255, 255, 255);
+  }
+
+  /*-------Freelancer----*/
+
+  .section--freelancer--comenzar{
+    width: 100%;
+    height: 350px;
+    background-image: url('./fondo.jpeg');
+  }
+  .comenzar--contenido--freelancer{
+    float: left;
+    width:345px;
+    margin-top:70px;
+  }
+
+  .section--freelancer--comenzar   .comenzar--titulo, .section--freelancer--comenzar  .comenzar--texto{
+    color:rgb(255, 255, 255);
+}
+
+
+  

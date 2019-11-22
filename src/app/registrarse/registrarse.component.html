@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="alert alert-danger text-center" role="alert" *ngIf="alert">
+        No debe dejar campos vacios
+    </div>
+    
+    <form #Form="ngForm">
+        <div class="radio">
+            <h1 class="titulo">Registrarse</h1>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1" (click)="opcion(1)"
+                    checked>
+                <label class="form-check-label" for="inlineRadio1">Freelancer</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option2" (click)="opcion(2)">
+                <label class="form-check-label" for="inlineRadio2">Negocios</label>
+            </div>
+        </div>
+    
+        <div class="form-group">
+            <input type="text" class="form-control" aria-describedby="" name="nombre" placeholder="Nombre" #nombre="ngModel"
+                [(ngModel)]="nom">
+        </div>
+        <div class="form-group" *ngIf="op1">
+            <input type="text" class="form-control" aria-describedby="" name="apellido" placeholder="Apellido"
+                #nombre="ngModel" [(ngModel)]="ape">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" aria-describedby="emailHelp" name="correo"
+                placeholder="Correo electronico" #nombre="ngModel" [(ngModel)]="cor">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" name="contraseña" placeholder="Contraseña" #nombre="ngModel"
+                [(ngModel)]="con">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" name="nuevaContraseña" placeholder="Nueva contraseña"
+                #nombre="ngModel" [(ngModel)]="cont2">
+        </div>
+        <div class="custom-control custom-checkbox my-3 mr-sm-2">
+            <input type="checkbox" class="custom-control-input" id="customControlInline">
+            <label class="custom-control-label" for="customControlInline">Acepto terminos y condiciones</label>
+        </div>
+        <div *ngIf="op2">
+            <button type="button" class="btn--crear" (click)="onSubtmit(Form)" [routerLink]="['/generarProyecto']">Crear
+                cuenta</button>
+        </div>
+        <div *ngIf="op1">
+            <button type="button" class="btn--crear" (click)="onSubtmit(Form)" [routerLink]="['/generarFreelancer']">Crear
+                cuenta</button>
+        </div>
+    </form>
+</body>
+</html>

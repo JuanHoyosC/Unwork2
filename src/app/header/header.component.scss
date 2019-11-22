@@ -1,0 +1,103 @@
+body{
+    margin:0px;
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    height: 60px;
+    background: #2A4695;
+}
+
+.header--principal{
+    width:70%;
+    height:64px;
+    margin:auto;
+}
+
+p{
+    margin:0px;
+    padding:0px;
+}
+
+.header--logo{
+    font-family: 'Microsoft Tai Le';
+    display:inline-flex;
+    width: 128px;
+    height: 32px;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+    margin:22px 0px;
+    cursor:pointer;
+}
+.header--nav{
+    position: relative;
+    left: 50%;
+    transform: translate(-100%,0%);
+    display:inline-block;
+}
+.header--nav ul{
+    display:inline-block;
+    padding:0px;
+    margin:0px;
+}
+.header--nav li{
+    color:#EBEBEB;
+    font-size: 14px;
+    display:inline-block;
+    list-style: none;
+    margin-left:25px;
+    cursor:pointer;
+}
+
+.header--nav li:hover{
+    color:rgba(235, 235, 235, 0.712);
+}
+
+.header--user{
+    float: right;
+    color:#EBEBEB;
+    font-size: 14px;
+    margin:29px 0px;
+}
+
+.header--user label{
+    cursor:pointer;
+}
+
+.header--user label:nth-child(2){
+    margin:0px 0px;
+    margin-left: 20px;
+}
+
+.header--user label:hover{
+    color:rgba(235, 235, 235, 0.712);
+}
+
+
+
+
+.fas{
+    color:rgba(255, 255, 255, 0.637);
+    position:relative;
+    top:110px;
+    left:-35px;
+    cursor:pointer;
+}
+
+/*---menu*/
+
+.menu{
+    position: relative;
+    top:0px;
+    left: 0px;
+    font-size: 0px;
+    color:white;
+    cursor:pointer;
+    padding:0px;
+    display:none;
+}
+
+.menu:hover{
+    background: rgba(0,0,0,0.5);
+}

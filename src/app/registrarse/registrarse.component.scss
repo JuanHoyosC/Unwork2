@@ -1,0 +1,40 @@
+body{
+  background-image: linear-gradient(#2A4695,#2C85AC);
+  height: 730px;
+}
+
+.titulo{
+  font-size:16px; 
+  color:#030303a9;
+  margin-left:20%;
+}
+
+form{
+  background:white;
+  position:relative;
+  left:50%;
+  transform:translate(-50%,25%);
+  width:350px;
+  border:1px solid #707070;
+  padding:20px;
+  border-radius:15px;
+}
+
+.btn--crear{
+  color:white;
+  background:#526392;
+  border:none;
+  border-radius:5px;
+  width:100%;
+  height:35px;
+}
+
+.btn--crear:hover{
+  background:#67769e;
+}
+
+.radio{
+  position:relative;
+  left:18%;
+  margin-bottom:20px;
+}
